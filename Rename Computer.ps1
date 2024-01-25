@@ -38,3 +38,6 @@ $computerName = $type + $location + $id
 
 # Afficher le nom de l'ordinateur
 Write-Output $computerName
+
+# Changer le nom de l'ordinateur
+Rename-Computer -NewName $computerName -Restart
